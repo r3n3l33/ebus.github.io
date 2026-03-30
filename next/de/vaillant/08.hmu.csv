@@ -25,7 +25,7 @@ r,,,EnergyIntegral,current energy integral,,,b51a,05ff3221,ign,,IGN:3,,,,value,,
 r,,,CurrentYieldPower,current yielded energy from the environment,,,b51a,05ff3223,ign,,IGN:3,,,,value,,SCH,10,kW,
 r,,,CurrentConsumedPower,current power consumption,,,b51a,05ff3224,ign,,IGN:3,,,,value,,SCH,10,kW,
 r,,,CurrentCompressorUtil,current compressor utilization,,,b51a,05ff3225,ign,,IGN:3,,,,value,,D2C,,%,
-r,,,AirIntakeTemp,air intake temperature,,,b51a,05ff3226,ign,,IGN:3,,,,value,,D2C,,°C,Temperatur
+r,,,AirIntakeTemp,air intake temperature,,,b51a,05ff3222,ign,,IGN:3,,,,value,,D2C,,°C,Temperatur
 r,,,TargetTempHc,heat circuit target temperature,,,b51a,05ff321c,ign,,IGN:3,,,,value,,D2C,,°C,Temperatur
 r,,,SourceTempOutput,,,,b51a,05ff3227,ign,,IGN:3,,,,value,,D2C,,°C,Temperatur
 r,,,BuildingCircuitFlow,,,,b51a,05ff323c,ign,,IGN:3,,,,value,,UIN,,l/h,
@@ -98,10 +98,8 @@ r,,,ConsumptionThisYear11,,,,b516,1a020b00,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:
 r,,,ConsumptionThisYear12,,,,b516,1a020c00,ign,,IGN:1,,,,month,,SCH,,,,ign,,IGN:1,,,,energy,,UIN,,kWh,
 w,,service,EnableTestEEVPosition,read EEV position,,,b514,0515,ignore,,HEX:3,=03FFFF,,,
 r,,service,TestEEVPosition,EEV position,,,b514,0515,ign,,IGN:2,,,,value,,UCH,,%,T.0.21
-w,,service,EnableTestCompressorExitTemp,read compressor outlet temperature,,,b514,0537,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestCompressorExitTemp,compressor outlet temperature,,,b514,0537,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.55
-w,,service,EnableTestCompressorIntakeTemp,read compressor inlet temperature,,,b514,0538,ignore,,HEX:3,=03FFFF,,,
-r,,service,TestCompressorInletTemp,compressor inlet temperature,,,b514,0538,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.56
+r,,service,TestCompressorExitTemp,compressor outlet temperature,,,b514,053703ffff,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.55
+r,,service,TestCompressorInletTemp,compressor inlet temperature,,,b514,053803ffff,ign,,IGN:2,,,,value,,SIN,10,°C,T.0.56
 w,,service,EnableTestWaterThroughput,read current heating water flow rate,,,b514,052b,ignore,,HEX:3,=03FFFF,,,
 r,,service,TestWaterThroughput,current heating water flow rate,,,b514,052b,ign,,IGN:2,,,,value,,UIN,,l/h,T.0.45
 w,,service,EnableTestCompressorSpeed,read compressor speed,,,b514,055d,ignore,,HEX:3,=03FFFF,,,
